@@ -1,0 +1,110 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height to full viewport height */
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.social-media {
+    display: flex;
+}
+
+.navbar {
+    display: none; /* Hide navbar by default */
+}
+
+/* Responsive adjustments for navbar */
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin: 0 10px;
+    }
+}
+
+/* Banner styles */
+.banner {
+    position: relative;
+    width: 100%;
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.left-info,
+.right-info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.right-info {
+    right: 0;
+}
+
+/* Responsive adjustments for slide text */
+@media screen and (min-width: 768px) {
+    .left-info,
+    .right-info {
+        top: 30%; /* Adjust vertical position */
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: #08055c;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    margin-top: auto; /* Push footer to the bottom of the page */
+    text-align: center;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-1 p {
+    font-size: 16px; /* Adjust font size */
+}
+
+.footer-1 ul li {
+    width: 30px;
+    height: 30px;
+    font-size: 16px; /* Adjust font size */
+}
+
+.footer-2 .item {
+    width: 100%; /* Adjust width for responsiveness */
+    margin-bottom: 20px; /* Increase margin for better spacing */
+}
+
+.footer-2 .item h2 {
+    font-size: 20px; /* Adjust font size */
+}
+
+.footer-2 .item ul li {
+    padding-left: 0; /* Reset padding */
+}
